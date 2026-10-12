@@ -41,21 +41,21 @@ export const evidence = [
     label: "less network provisioning effort",
     context:
       "Automated network deployment workflows with Python and Docker during a software engineering internship.",
-    source: "L2X Brazil (Cisco Sydney) · 2023–24",
+    source: "L2X Brazil (Cisco Sydney) · 2023 to 2024",
   },
   {
     figure: "91%",
     label: "model accuracy on 50,000+ records",
     context:
       "Built the feature engineering and preprocessing, then served predictions through a Flask REST API.",
-    source: "Reliance Jio Brain · 2024–25",
+    source: "Reliance Jio Brain · 2024 to 2025",
   },
   {
     figure: "15%",
     label: "better demand-forecast accuracy",
     context:
       "Python forecasting pipelines over 10+ years of Queensland weather and electricity data; 5+ models benchmarked.",
-    source: "University of Queensland research · 2024–25",
+    source: "University of Queensland research · 2024 to 2025",
   },
   {
     figure: "BE (Hons)",

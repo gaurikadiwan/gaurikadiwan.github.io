@@ -35,7 +35,7 @@ export default function AboutPage() {
             UQ, I built reproducible forecasting pipelines over a decade of Queensland energy data.
           </p>
           <p>
-            Today I work as a graduate engineer in software and network infrastructure. I develop Python backend services,
+            Today I work at Reliance Jio as a graduate engineer in software and network infrastructure. I develop Python backend services,
             MCP server tooling and agent-to-agent workflows that automate operations across national-scale 5G infrastructure.
           </p>
           <h2>What I want to build next</h2>

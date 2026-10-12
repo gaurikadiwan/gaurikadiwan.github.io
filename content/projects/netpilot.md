@@ -2,7 +2,7 @@
 title: NetPilot
 tagline: Permission-scoped infrastructure tools that an AI assistant can call, without being able to silently change anything.
 kind: Personal project
-period: Aug 2026 – ongoing
+period: Aug 2026 to present
 status: Milestone 1 complete
 problem: AI assistants are increasingly useful for infrastructure questions, but giving a model unrestricted tool access to infrastructure is a real operational risk.
 contribution: Designed and built the service end to end, including the tool registry, scope-based permission model, audit logging, simulated network, tests and CI.

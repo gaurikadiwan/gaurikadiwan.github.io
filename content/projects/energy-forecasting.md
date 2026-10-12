@@ -2,7 +2,7 @@
 title: Queensland Energy Demand Forecasting
 tagline: Research forecasting pipelines combining Australian weather and electricity data, with more than five models benchmarked over a decade of Queensland energy data.
 kind: Undergraduate research · The University of Queensland
-period: Jul 2024 – Jul 2025
+period: Jul 2024 to Jul 2025
 problem: Electricity demand depends heavily on weather, and better short-term forecasts support more reliable and sustainable energy planning.
 contribution: Developed the Python forecasting pipelines and reproducible data-processing workflows, and benchmarked the forecasting models.
 stack: [Python, Time-series forecasting, Data pipelines, Model evaluation]

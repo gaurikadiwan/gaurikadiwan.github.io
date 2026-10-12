@@ -2,7 +2,7 @@
 title: Alzheimer's Disease Classification
 tagline: A Vision Transformer built from scratch in PyTorch for classifying brain MRI slices from the ADNI dataset as Alzheimer's disease or normal control.
 kind: Coursework · COMP3710 Pattern Analysis, UQ
-period: Sep – Oct 2023
+period: Sep to Oct 2023
 problem: Classifying brain scans as Alzheimer's disease or normal control. The course set this as a hard-difficulty task with a target of 80% test accuracy, to be met with a vision or transformer model.
 contribution: Designed and wrote the Vision Transformer architecture, the ADNI dataset loader and preprocessing, and the plotting and prediction scripts, and wrote the project report.
 stack: [Python, PyTorch, torchvision, Vision Transformer, Matplotlib]

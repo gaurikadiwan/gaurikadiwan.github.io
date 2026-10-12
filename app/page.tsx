@@ -38,7 +38,7 @@ export default function HomePage() {
           </h1>
           <p className="rise rise-2 mt-7 max-w-[36rem] text-[1.1rem] leading-relaxed text-ink-2 md:text-[1.2rem]">
             I&apos;m a University of Queensland Software Engineering (Honours) graduate, now working as a graduate
-            engineer on Python services, MCP tooling and API-driven provisioning for national-scale 5G infrastructure.
+            engineer at Reliance Jio on Python services, MCP tooling and API-driven provisioning for national-scale 5G infrastructure.
             Before that, I built ML prediction APIs, energy-forecasting pipelines and network automation.
           </p>
           <div className="rise rise-3 mt-9 flex flex-wrap items-center gap-3">

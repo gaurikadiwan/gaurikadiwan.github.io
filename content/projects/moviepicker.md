@@ -2,7 +2,7 @@
 title: MoviePicker
 tagline: A group movie picker. Everyone in a session swipes on films, and when enough people like the same one, every device shows the match at the same moment.
 kind: Team project · CSSE6400 Software Architecture, UQ
-period: Feb – May 2025
+period: Feb to May 2025
 team: Team of six
 problem: Choosing a film as a group means scrolling across several streaming services and rarely agreeing. The system has to collect everyone's choices and announce a match to every device at once.
 contribution: Built much of the React frontend, including sign-up and login, session creation with PIN sharing, joining a group, the swiping screen and the match overlay, and co-wrote the architecture decision records for those parts.

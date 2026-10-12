@@ -7,7 +7,7 @@ import { Button } from "@/components/Button";
 export const metadata = pageMetadata({
   title: "Experience",
   description:
-    "Gaurika Diwan's professional and research experience: graduate engineering on 5G infrastructure automation, ML engineering at Reliance Jio Brain, energy forecasting research at UQ, and network automation with L2X (Cisco Sydney).",
+    "Gaurika Diwan's professional and research experience: graduate engineering on 5G infrastructure automation at Reliance Jio, ML engineering at Reliance Jio Brain, energy forecasting research at UQ, and network automation with L2X (Cisco Sydney).",
   path: "/experience/",
 });
 

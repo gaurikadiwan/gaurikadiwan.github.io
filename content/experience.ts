@@ -1,7 +1,7 @@
 /**
  * Professional and research experience, newest first.
- * Source: resume. The current employer is intentionally not named
- * (the resume does not name it either). Keep descriptions high-level.
+ * Source: resume, plus current-role details supplied by Gaurika (2026-10-12).
+ * Keep descriptions high-level.
  */
 
 export type Role = {
@@ -21,7 +21,7 @@ export const experience: Role[] = [
   {
     id: "graduate-engineer",
     title: "Graduate Engineer, Software & Network Infrastructure",
-    organisation: null,
+    organisation: "Reliance Jio",
     kind: "Full-time",
     start: "2026-04",
     end: null,
@@ -91,5 +91,5 @@ export function formatMonth(ym: string): string {
 }
 
 export function formatRange(role: Pick<Role, "start" | "end">): string {
-  return `${formatMonth(role.start)} – ${role.end ? formatMonth(role.end) : "Present"}`;
+  return `${formatMonth(role.start)} to ${role.end ? formatMonth(role.end) : "present"}`;
 }
