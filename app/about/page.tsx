@@ -8,7 +8,7 @@ import { SmartLink } from "@/components/SmartLink";
 export const metadata = pageMetadata({
   title: "About",
   description:
-    "About Gaurika Diwan: a software engineer working across backend systems, cloud and infrastructure automation, and applied ML.",
+    "About Gaurika Diwan: a software engineer working across backend and web applications, cloud and infrastructure automation, data and applied AI.",
   path: "/about/",
 });
 
@@ -17,7 +17,7 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="About"
-        title="Software engineer, working where infrastructure meets intelligence."
+        title="Software engineer, building dependable systems end to end."
         lede={<p>A short version of how I got here and what I want to build next.</p>}
       />
 
@@ -40,10 +40,14 @@ export default function AboutPage() {
           </p>
           <h2>What I want to build next</h2>
           <p>
-            I&apos;m drawn to platform and cloud engineering, and to the growing overlap between that work and AI systems.
-            Agents and language models are becoming another kind of client for infrastructure APIs. I want to build the layer
-            that makes that safe, with narrow permissions, typed interfaces, audit trails and humans approving anything that
-            changes state. My side project{" "}
+            My interests are deliberately broad: backend and full-stack development, cloud and platform engineering, DevOps and
+            infrastructure automation, data engineering, and AI/ML systems. What connects them is the same goal of building
+            software that is reliable, observable and easy for the next engineer to understand.
+          </p>
+          <p>
+            One area I find especially interesting is where infrastructure meets AI. Agents and language models are becoming
+            another kind of client for infrastructure APIs, and they need narrow permissions, typed interfaces, audit trails
+            and humans approving anything that changes state. My side project{" "}
             <SmartLink href="/projects/netpilot/">NetPilot</SmartLink> is a small, working version of that idea.
           </p>
           <h2>How I approach engineering</h2>
@@ -57,13 +61,12 @@ export default function AboutPage() {
               <strong>Make it reproducible.</strong> Pipelines, environments and deployments should give the same result twice.
             </li>
             <li>
-              <strong>Write down the limitations.</strong> The case studies on this site say what is unfinished, because that
-              is part of an honest engineering record.
+              <strong>Be clear about who built what.</strong> Most real software is a team effort, so the case studies on
+              this site separate my own contributions from the team&apos;s.
             </li>
           </ul>
           <p>
-            Outside of my core work, I was a Women in Engineering Student Leader at UQ. I&apos;m using this site to publish
-            engineering notes as I learn.
+            Outside of my core work, I was a Women in Engineering Student Leader at UQ.
           </p>
         </div>
 
@@ -79,7 +82,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <dt className="font-medium text-ink">Focus</dt>
-                <dd className="text-ink-2">Backend services, cloud and platform automation, AI systems</dd>
+                <dd className="text-ink-2">Backend and full-stack software, cloud and platform automation, data and AI systems</dd>
               </div>
               <div>
                 <dt className="font-medium text-ink">Work rights</dt>

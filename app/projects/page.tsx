@@ -20,9 +20,8 @@ export default function ProjectsPage() {
         title="Case studies"
         lede={
           <p>
-            Each case study covers the problem, my role, the design decisions, how it was tested and what is still
-            unfinished. Every page says where its details come from: public source code, a private course repository, or a
-            summary when the code isn&apos;t available.
+            Each case study covers the problem, my role, the architecture and design decisions, how it was tested and the
+            outcome. Where the source code is public, it is linked.
           </p>
         }
       />

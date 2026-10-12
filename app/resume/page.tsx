@@ -9,7 +9,7 @@ import { SmartLink } from "@/components/SmartLink";
 export const metadata = pageMetadata({
   title: "Resume",
   description:
-    "Resume of Gaurika Diwan, Software Engineer (Cloud, Platform & AI Systems). Summary, skills, experience and education, with a PDF download.",
+    "Resume of Gaurika Diwan, Software Engineer (Backend, Cloud, Data & AI Systems). Summary, skills, experience and education, with a PDF download.",
   path: "/resume/",
 });
 
@@ -23,7 +23,7 @@ export default function ResumePage() {
           <p>
             Software Engineering (Honours) graduate from the University of Queensland, with hands-on experience building
             cloud-native applications, backend systems and infrastructure automation using Azure, AWS, Python, Docker and
-            CI/CD. Seeking Cloud, DevOps, Platform and Software Engineering roles. {site.workRights}.
+            CI/CD. {site.availability} {site.workRights}.
           </p>
         }
       >

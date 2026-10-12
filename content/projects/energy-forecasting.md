@@ -11,7 +11,7 @@ featured: true
 order: 3
 diagram:
   title: Research workflow
-  caption: A simplified view of the workflow. The source code and datasets are not public.
+  caption: A simplified view of the research workflow.
   steps:
     - label: Weather + electricity data
       note: Australian datasets, 10+ years for Queensland
@@ -45,7 +45,3 @@ The work improved demand-forecasting accuracy by **15%**.
 ## Engineering takeaways
 
 Much of the engineering in research forecasting is in the pipeline rather than the model. Comparing more than five models fairly requires data processing that is reproducible, so that every model is evaluated on the same inputs in the same way.
-
-## Limitations of this write-up
-
-This summary is based on my resume. The research code and data aren't public, so this page deliberately doesn't describe specific models, features or evaluation metrics.

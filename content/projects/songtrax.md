@@ -38,7 +38,3 @@ Sharing structure and logic between web and native apps is harder than it sounds
 - **State management** for the data the app depends on.
 - **API integration** to load and save the app's data.
 - **Device APIs** on mobile: maps to anchor the experience to real locations, and an image picker for photos.
-
-## Limitations of this write-up
-
-The source isn't public, so this page summarises the project from my own description and doesn't go into specific frameworks or implementation details.

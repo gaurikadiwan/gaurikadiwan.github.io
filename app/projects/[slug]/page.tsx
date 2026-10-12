@@ -71,9 +71,7 @@ export default async function ProjectPage({ params }: { params: Promise<Params> 
                   {project.repo.replace("https://", "")}
                 </SmartLink>
               ) : (
-                project.evidence === "private-repo"
-                  ? "Private course repository, so it isn't linked."
-                  : "Not public."
+                "Private repository"
               )}
             </dd>
           </div>

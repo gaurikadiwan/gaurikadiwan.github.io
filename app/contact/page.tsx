@@ -7,7 +7,7 @@ import { SmartLink } from "@/components/SmartLink";
 
 export const metadata = pageMetadata({
   title: "Contact",
-  description: "Contact Gaurika Diwan by email or LinkedIn about software, cloud, platform, DevOps and AI engineering roles in Australia.",
+  description: "Contact Gaurika Diwan by email or LinkedIn about technology roles in Australia, across software, cloud, data and AI.",
   path: "/contact/",
 });
 
@@ -26,8 +26,8 @@ export default function ContactPage() {
         title="Let's talk."
         lede={
           <p>
-            {site.availability} {site.workRights}. I&apos;m also happy to hear from engineers who want to talk about
-            platform automation or AI tooling.
+            {site.availability} {site.workRights}. I&apos;m also happy to hear from engineers who want to talk shop
+            about anything I&apos;ve built.
           </p>
         }
       />

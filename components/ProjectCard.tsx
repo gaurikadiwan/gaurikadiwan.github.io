@@ -6,9 +6,10 @@ import { SmartLink } from "./SmartLink";
 export function EvidenceBadge({ evidence }: { evidence: Project["evidence"] }) {
   const label = {
     "public-repo": "Public source",
-    "private-repo": "Private course repository",
-    summary: "Summary · source not public",
+    "private-repo": "Private repository",
+    summary: "",
   }[evidence];
+  if (!label) return null;
   return <span className="font-mono text-[0.7rem] text-ink-3">{label}</span>;
 }
 

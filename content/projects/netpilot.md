@@ -88,7 +88,26 @@ The diagram above shows the request path. Two tools exist today:
 | `network_inventory` | `read` | Lists simulated nodes, filterable by site and status |
 | `config_validate` | `read` | Compares a node's current config with its recorded baseline and reports drift |
 
-The seed script creates 15 nodes across three simulated sites. It then deliberately drifts three of them: a rolled-back firmware version, a weakened TLS minimum version and debug logging left on. This gives the drift check something real to find.
+### The simulated network and drift detection
+
+To test the tools without touching real infrastructure, NetPilot generates its own small network. A seed script creates 15 nodes, such as 5G base stations (gNBs), routers and gateways, spread across three simulated sites, and stores them in the database.
+
+Every node gets two copies of its configuration:
+
+- A **baseline**, which is the approved, expected configuration: firmware `24.3.1`, a minimum TLS version of `1.2`, `INFO`-level logging and a connection limit of 512.
+- A **current** configuration, which represents what is actually running on the device.
+
+On a healthy node, the two match. In real networks they often don't, because of manual fixes, partial rollbacks or settings left behind after troubleshooting. This gap is called **configuration drift**, and it is a common cause of outages and security exposure.
+
+The seed script deliberately introduces three realistic examples of drift:
+
+| Node change | Why it matters |
+| --- | --- |
+| Firmware rolled back to `23.9.0` | The device may be missing fixes that the rest of the fleet has |
+| Minimum TLS lowered from `1.2` to `1.0` | Weaker encryption is accepted, which is a security risk |
+| Logging left at `DEBUG` instead of `INFO` | Noisy logs, extra load and possible leakage of sensitive detail |
+
+The `config_validate` tool then checks a node by comparing every baseline setting with the current value. It returns whether the node has drifted, and lists each deviation with the setting, the expected value and the actual value. Because the seeded cases are known in advance, the tests can prove that the check catches real drift and reports nothing on a healthy node.
 
 ## Technology choices
 
@@ -100,9 +119,9 @@ The seed script creates 15 nodes across three simulated sites. It then deliberat
 
 The test suite exercises the API end to end against seeded data. It covers authentication failures, tool listing, filtering by site and status, detection of a known drift case, a clean node reporting no drift, and the `422` and `404` paths. There are 10 tests, and they pass when run locally.
 
-## Results and limitations
+## Current scope
 
-NetPilot is at the end of its first milestone. Everything is read-only, and the tools are served over plain HTTP using MCP-style naming rather than the MCP protocol itself. Authentication uses a single configured token with a fixed set of scopes. That suits a demonstration, but it is not a production identity model.
+The first milestone is complete. All tools are read-only, and they are served over HTTP using MCP-style tool definitions, with the MCP transport itself planned for a later stage. Authentication uses a configured token mapped to a set of scopes, which keeps the permission model easy to test.
 
 ## What's next
 

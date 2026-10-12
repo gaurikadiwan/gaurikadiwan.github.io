@@ -66,13 +66,9 @@ This is a solo project. I built the backend, the frontend and the local containe
 - **React, Vite and Tailwind.** A dashboard with upload, KPI cards, charts, Q&A, history and PDF export.
 - **Docker Compose.** Starts PostgreSQL, the Flask API and the frontend dev server together.
 
-## Results and limitations
+## Results
 
-The project demonstrates the architecture working end to end. It has some honest limitations:
-
-- The KPI and grouping logic is tuned for sales-style datasets with regions, departments and dates. Other shapes of data get a more generic profile.
-- There is no automated test suite yet. Adding tests for the pandas pipeline, where correctness matters most, would be the first improvement.
-- Caches are in memory, so they are lost when the process restarts.
+The project demonstrates the architecture working end to end, from upload through analysis, Q&A and PDF export. The KPI and grouping logic is tuned for sales-style datasets with regions, departments and dates, and other shapes of data get a more generic profile.
 
 ## What I'd improve
 

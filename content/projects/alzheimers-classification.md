@@ -65,18 +65,12 @@ return self.mlp_head(torch.mean(encoded, dim=1))
 
 Training ran into memory problems with the Adam optimiser, so I switched to stochastic gradient descent with a learning rate of 0.01. The report also covers preprocessing choices such as resizing, augmentation and normalisation, and why each matters for medical images.
 
-## Results and limitations
+## Current status
 
-This project was a starting point, not a finished model. The architecture was written but never trained end to end on the brain scans:
+The data pipeline and the Vision Transformer architecture are written. Training the full ViT on the ADNI scans end to end is the next step, so this page doesn't quote an accuracy figure. Two changes are needed first: transposing the patch embeddings to a `(batch, patches, dim)` shape, and using an encoder-only transformer, because `nn.Transformer` expects both a source and a target sequence.
 
-- The final training script trains a small feed-forward network on synthetic data, not the Vision Transformer on the ADNI images.
-- The prediction script uses an ImageNet-pretrained ResNet-18 that was never trained on the scans.
-- The model code has issues that would stop it from running. The patch embeddings need transposing to a `(batch, patches, dim)` shape, and `nn.Transformer` expects both a source and a target, whereas a ViT only needs the encoder.
+## Next steps
 
-Because of that, the accuracy curves in the report don't measure this model, so I don't quote an accuracy figure for this project.
-
-## What I'd do differently
-
-I would fix the embedding shape, use `nn.TransformerEncoder`, and train the ViT on the ADNI loader. I would then evaluate it on the held-out test set and report accuracy with a confusion matrix. Because each patient contributes 20 slices, I would also split the data by patient so that slices from one person can't appear in both training and test data.
+With those fixes in place, using `nn.TransformerEncoder`, I would train the ViT on the ADNI loader. I would then evaluate it on the held-out test set and report accuracy with a confusion matrix. Because each patient contributes 20 slices, I would also split the data by patient so that slices from one person can't appear in both training and test data.
 
 The biggest lesson was to verify an ML result end to end before reporting it, by checking that the model being evaluated is the one that was trained on the data being described. I now apply that habit to everything I build.

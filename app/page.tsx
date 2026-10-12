@@ -33,8 +33,8 @@ export default function HomePage() {
             id="hero-title"
             className="rise rise-1 mt-6 text-[2.75rem] leading-[1.02] font-normal tracking-[-0.025em] text-ink sm:text-[3.6rem] lg:text-[4.35rem]"
           >
-            Building <em className="font-light text-accent">reliable</em> backend services, infrastructure automation
-            and AI workflows.
+            Building <em className="font-light text-accent">reliable</em> software, from backend and cloud to data
+            and AI.
           </h1>
           <p className="rise rise-2 mt-7 max-w-[36rem] text-[1.1rem] leading-relaxed text-ink-2 md:text-[1.2rem]">
             I&apos;m a University of Queensland Software Engineering (Honours) graduate, now working as a graduate
