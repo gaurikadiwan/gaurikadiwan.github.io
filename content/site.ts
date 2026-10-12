@@ -10,11 +10,11 @@ export const site = {
   focus: "Backend, Cloud, Data & AI Systems",
   title: "Gaurika Diwan · Software Engineer, Backend, Cloud, Data & AI Systems",
   description:
-    "Gaurika Diwan is a software engineer who builds backend services, web applications, cloud and infrastructure automation, data pipelines and AI-enabled workflows. University of Queensland Software Engineering (Honours) graduate with full Australian work rights.",
+    "Gaurika Diwan is a software engineer who builds backend services, web applications, cloud and infrastructure automation, data pipelines and AI-enabled workflows. University of Queensland Software Engineering (Honours) graduate with full-time Australian work rights.",
   // Change this if the site is deployed somewhere else (also see README).
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://gaurikadiwan.github.io",
   locale: "en_AU",
-  workRights: "Full Australian work rights (Subclass 485 visa)",
+  workRights: "Full-time Australian work rights (Subclass 485 visa)",
   availability:
     "Open to technology opportunities across Australia, spanning software engineering, cloud and infrastructure, platform automation, AI/ML, data engineering, AI/tech consulting, and other areas aligned with my experience.",
 } as const;
