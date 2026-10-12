@@ -24,7 +24,7 @@ export default function HomePage() {
         <div className="lg:col-span-7">
           <p className="rise eyebrow flex flex-wrap items-center gap-x-3 gap-y-1">
             <span className="text-ink">{site.name}</span>
-            <span aria-hidden="true" className="h-px w-6 bg-rule-strong" />
+            <span aria-hidden="true">·</span>
             <span>
               {site.role} · {site.focus}
             </span>
