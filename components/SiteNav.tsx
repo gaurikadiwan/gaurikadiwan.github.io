@@ -4,7 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 import { Menu, X, FileText } from "lucide-react";
-import { nav } from "@/content/site";
+import { links, nav } from "@/content/site";
+import { withBase } from "@/lib/paths";
 
 function isActive(pathname: string, href: string) {
   return pathname === href || pathname.startsWith(href);
@@ -62,23 +63,26 @@ export function SiteNav() {
             </Link>
           );
         })}
-        <Link
-          href="/resume/"
-          aria-current={isActive(pathname, "/resume/") ? "page" : undefined}
+        <a
+          href={withBase(links.resumePdf)}
+          target="_blank"
+          rel="noopener noreferrer"
           className="ml-3 inline-flex min-h-10 items-center gap-2 rounded-[4px] bg-accent px-4 text-[0.94rem] font-medium text-paper transition-colors hover:bg-accent-deep"
         >
           <FileText aria-hidden="true" className="size-4" />
           View resume
-        </Link>
+        </a>
       </nav>
 
       <div className="flex items-center gap-2 md:hidden">
-        <Link
-          href="/resume/"
+        <a
+          href={withBase(links.resumePdf)}
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex min-h-11 items-center rounded-[4px] bg-accent px-3.5 text-[0.9rem] font-medium text-paper"
         >
           Resume
-        </Link>
+        </a>
         <button
           ref={buttonRef}
           type="button"

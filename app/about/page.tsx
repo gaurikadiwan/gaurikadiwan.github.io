@@ -90,7 +90,7 @@ export default function AboutPage() {
               </div>
             </dl>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Button href="/resume/" variant="primary">View resume</Button>
+              <Button href={links.resumePdf} asset newTab variant="primary">View resume</Button>
               <Button href={links.linkedin} variant="secondary">LinkedIn</Button>
             </div>
           </div>

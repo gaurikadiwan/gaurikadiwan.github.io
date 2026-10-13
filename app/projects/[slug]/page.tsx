@@ -1,3 +1,4 @@
+import { links } from "@/content/site";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -102,7 +103,7 @@ export default async function ProjectPage({ params }: { params: Promise<Params> 
               </span>
             </Link>
           ) : <span />}
-          <Button href="/resume/" variant="secondary">View resume</Button>
+          <Button href={links.resumePdf} asset newTab variant="secondary">View resume</Button>
         </div>
       </footer>
     </article>

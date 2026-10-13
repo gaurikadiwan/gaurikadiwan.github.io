@@ -10,6 +10,8 @@ type Props = {
   /** Static files (PDFs) bypass the router but still need the base path. */
   asset?: boolean;
   download?: boolean;
+  /** Open in a new tab (used for the resume PDF). */
+  newTab?: boolean;
   showExternalIcon?: boolean;
   "aria-label"?: string;
 };
@@ -19,10 +21,16 @@ type Props = {
  * internal routes use next/link, files get the base path, and external
  * links open in a new tab with a visible arrow and screen-reader text.
  */
-export function SmartLink({ href, children, className, asset, download, showExternalIcon = true, ...rest }: Props) {
+export function SmartLink({ href, children, className, asset, download, newTab, showExternalIcon = true, ...rest }: Props) {
   if (asset) {
     return (
-      <a href={withBase(href)} className={className} download={download ? "" : undefined} {...rest}>
+      <a
+        href={withBase(href)}
+        className={className}
+        download={download ? "" : undefined}
+        {...(newTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+        {...rest}
+      >
         {children}
       </a>
     );

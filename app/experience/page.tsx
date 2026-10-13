@@ -1,5 +1,5 @@
 import { experience, formatRange } from "@/content/experience";
-import { education } from "@/content/site";
+import { education, links } from "@/content/site";
 import { pageMetadata } from "@/lib/seo";
 import { PageHeader } from "@/components/PageHeader";
 import { Button } from "@/components/Button";
@@ -19,7 +19,7 @@ export default function ExperiencePage() {
         title="Professional and research experience"
         lede={<p>Backend services, automation and applied machine learning, in reverse chronological order.</p>}
       >
-        <Button href="/resume/" variant="secondary">View resume</Button>
+        <Button href={links.resumePdf} asset newTab variant="secondary">View resume</Button>
       </PageHeader>
 
       <div className="page pb-20">

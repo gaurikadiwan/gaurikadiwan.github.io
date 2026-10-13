@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, FileText } from "lucide-react";
-import { site } from "@/content/site";
+import { site, links } from "@/content/site";
 import { getProjects } from "@/lib/projects";
 import { getArticles } from "@/lib/writing";
 import { Button } from "@/components/Button";
@@ -46,7 +46,7 @@ export default function HomePage() {
               Explore my work
               <ArrowRight aria-hidden="true" className="size-4" />
             </Button>
-            <Button href="/resume/" variant="secondary">
+            <Button href={links.resumePdf} asset newTab variant="secondary">
               <FileText aria-hidden="true" className="size-4" />
               View resume
             </Button>
@@ -54,12 +54,6 @@ export default function HomePage() {
               Read my writing
             </Link>
           </div>
-          <p className="rise rise-4 mt-9 flex items-start gap-2.5 text-[0.92rem] text-ink-2">
-            <span aria-hidden="true" className="pulse mt-[0.45rem] block size-2 shrink-0 rounded-full bg-accent" />
-            <span>
-              {site.availability} <strong className="font-medium text-ink">{site.workRights}.</strong>
-            </span>
-          </p>
         </div>
         <div className="lg:col-span-5 lg:pt-3">
           <StackFigure />

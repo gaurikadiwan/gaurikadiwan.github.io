@@ -20,15 +20,17 @@ type Props = {
   variant?: keyof typeof styles;
   asset?: boolean;
   download?: boolean;
+  newTab?: boolean;
   className?: string;
 };
 
-export function Button({ href, children, variant = "primary", asset, download, className = "" }: Props) {
+export function Button({ href, children, variant = "primary", asset, download, newTab, className = "" }: Props) {
   return (
     <SmartLink
       href={href}
       asset={asset}
       download={download}
+      newTab={newTab}
       showExternalIcon={false}
       className={`inline-flex min-h-11 items-center gap-2 rounded-[4px] border px-4.5 py-2.5 text-[0.95rem] font-medium leading-none transition-colors duration-200 ${styles[variant]} ${className}`}
     >
