@@ -41,7 +41,7 @@ export default function ResumePage() {
             View PDF in browser
           </SmartLink>
         </div>
-        <p className="mt-3 font-mono text-xs text-ink-3">2 pages · A4 · PDF</p>
+        <p className="mt-3 font-mono text-xs text-ink-3">1 page · A4 · PDF</p>
       </PageHeader>
 
       <div className="page grid gap-14 pb-20 lg:grid-cols-12">
