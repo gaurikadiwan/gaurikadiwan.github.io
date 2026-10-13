@@ -10,7 +10,7 @@ export function ContactBand() {
         <div className="md:col-span-7">
           <p className="eyebrow !text-on-night-2">Opportunities</p>
           <h2 id="contact-band-title" className="mt-4 text-[2.1rem] leading-[1.1] font-normal md:text-[2.9rem]">
-            Looking for an engineer who builds reliable systems and can explain how they work?
+            Looking for an engineer who builds reliable systems and sees them through to production?
           </h2>
         </div>
         <div className="flex flex-col justify-end gap-6 md:col-span-5">
