@@ -15,7 +15,7 @@ const channels: { label: string; value: string; href: string; icon: LucideIcon; 
   { label: "Email", value: links.email, href: `mailto:${links.email}`, icon: Mail, note: "The best way to reach me." },
   { label: "LinkedIn", value: "linkedin.com/in/gaurika-diwan", href: links.linkedin, icon: BriefcaseBusiness, note: "Connect or send a message." },
   { label: "GitHub", value: "github.com/gaurikadiwan", href: links.github, icon: FolderGit2, note: "Public code and project history." },
-  { label: "Resume", value: "Gaurika-Diwan-Resume.pdf", href: links.resumePdf, icon: FileText, note: "2-page PDF.", asset: true },
+  { label: "Resume", value: "Gaurika-Diwan-Resume.pdf", href: links.resumePdf, icon: FileText, note: "1-page PDF.", asset: true },
 ];
 
 export default function ContactPage() {
