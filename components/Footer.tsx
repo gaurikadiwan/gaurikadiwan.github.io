@@ -44,7 +44,6 @@ export function Footer() {
       </div>
       <div className="page flex flex-col gap-2 border-t border-rule py-6 font-mono text-xs text-ink-3 sm:flex-row sm:justify-between">
         <p>© {year} {site.name}</p>
-        <p>Static site · Next.js · hosted on GitHub Pages</p>
       </div>
     </footer>
   );
